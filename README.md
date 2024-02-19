@@ -32,24 +32,26 @@ User-Friendly Interface: SyncConnect features an intuitive and responsive user i
 Getting Started
 To start using SyncConnect, follow these steps:
 
-Clone the Repository: Clone the SyncConnect repository to your local machine using the following command:
+1.)Clone the Repository: Clone the SyncConnect repository to your local machine using the following command:
 
-bash
+```bash
 Copy code
-git clone <repository-url>
-Install Dependencies: Navigate to the project directory and install the necessary dependencies using npm:
+git clone https://github.com/itsariin/sync-connect.git
+```
+2.)Install Dependencies: Navigate to the project directory and install the necessary dependencies 
 
-arduino
-Copy code
+using npm:
+``` bash
 cd sync-connect
 npm install
-Configure the Application: Modify the configuration files (if necessary) to customize the application settings according to your requirements.
+```
+3.)Configure the Application: Modify the configuration files (if necessary) to customize the application 
+   settings according to your requirements.
 
-Run the Application: Start the SyncConnect application using npm:
-
-sql
-Copy code
+4.)Run the Application: Start the SyncConnect application using npm:
+``` bash
 npm start
+```
 Access SyncConnect: Open your web browser and navigate to the SyncConnect URL to start using the application.
 
 Contributing
