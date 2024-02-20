@@ -1,9 +1,9 @@
-SyncConnect
+## SyncConnect
 SyncConnect is a corporate communication platform designed to streamline team collaboration and enhance productivity. 
 It provides a set of features tailored for corporate use, aiming to facilitate efficient communication and seamless 
 collaboration within teams.
 
-Features
+## Features
 
 Efficient Communication: SyncConnect enables high-quality voice and video calls, allowing team members to communicate 
                          effectively in real-time. Whether it's quick discussions or important meetings, SyncConnect 
@@ -29,13 +29,12 @@ User-Friendly Interface: SyncConnect features an intuitive and responsive user i
                          members to navigate the platform and access its features. The user-friendly design 
                          enhances user experience and ensures smooth interaction.
 
-Getting Started
+## Getting Started
 To start using SyncConnect, follow these steps:
 
 1.)Clone the Repository: Clone the SyncConnect repository to your local machine using the following command:
 
 ```bash
-Copy code
 git clone https://github.com/itsariin/sync-connect.git
 ```
 2.)Install Dependencies: Navigate to the project directory and install the necessary dependencies 
@@ -54,16 +53,16 @@ npm start
 ```
 Access SyncConnect: Open your web browser and navigate to the SyncConnect URL to start using the application.
 
-Contributing
+## Contributing
 We welcome contributions from the community to enhance SyncConnect further. If you have ideas for new features, 
 bug fixes, or improvements, feel free to submit pull requests. Please ensure that your contributions align 
 with our project guidelines and coding standards.
 
-License
+## License
 SyncConnect is licensed under the [insert license name] License. For more details, refer to the 
  file.
 
-Contact
+## Contact
 For inquiries, feedback, or support, you can contact us at arinjain349@gmail.com
 We appreciate your interest and look forward to hearing from you!
 
@@ -73,7 +72,14 @@ We appreciate your interest and look forward to hearing from you!
 
 
 
-
+##   LEARNING'S
+     why to use to use organisational folders [ () ]?
+     1:- Well if you have alot of routes in your application it comes very handy
+     2:-you can also create custom layouts 
+        For Eg-:lets take the sidebar there are pages where you want to have the layout
+                of the sidebar different from the rest of the page or there will be some
+                page where you don't need the layout atall so, in these type of situation
+                it helps you.  
 
 
 
