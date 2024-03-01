@@ -7,6 +7,8 @@ body,
 :root{
   height: 100%;
 }
+/* this is the thing we did for ease */
+
  
 @layer base {
   :root {
