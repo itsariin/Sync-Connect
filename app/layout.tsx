@@ -4,6 +4,10 @@ import "./globals.css";
 //Added the clerk provider here in the main layout file 
 import { ClerkProvider } from "@clerk/nextjs";
 
+//imported the dark theme thingy from shadcn and wrapping the children in it
+import { ThemeProvider } from "@/components/providers/theme-provider";
+import { cn } from "@/lib/utils";
+
 const font = Open_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -19,8 +23,21 @@ export default function RootLayout({
   return (
     //here wrapped the whole application with the clerk provider
     <ClerkProvider>
-      <html lang="en">
-      <body className={font.className}>{children}</body>
+      {/* added suppressHydrationWarning in html */}
+      <html lang="en" suppressHydrationWarning>
+      <body className={cn (
+        font.className,
+        "bg-white dark:bg-[#313338]"
+        )}>
+        <ThemeProvider
+        attribute="class"
+        defaultTheme="dark"
+        enableSystem={false}
+        storageKey="syncconnect-theme"
+        >
+        {children}
+        </ThemeProvider>
+        </body>
       </html>
     </ClerkProvider>
   );
