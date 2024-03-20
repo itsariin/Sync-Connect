@@ -77,12 +77,12 @@ export const InitialModel = () => {
 
     return (
         <Dialog open>
-            <DialogContent className="bg-white text-black p-0 overflow-hidden">
+            <DialogContent className="bg-[#FBFAF2] text-black p-0 overflow-hidden">
                 <DialogHeader className="pt-8 px-6">
                     <DialogTitle className="text-2xl text-center font-bold">
                         Customize your server
                     </DialogTitle>
-                    <DialogDescription className="text-center, text-zinc-500">
+                    <DialogDescription className="text-center, text-black">
                         Give your server a persona with a title and an image.
                         You can always change it later.
                     </DialogDescription>
@@ -120,7 +120,7 @@ export const InitialModel = () => {
                                     <FormControl>
                                         <Input
                                         disabled={isLoading}
-                                        className="bg-zinc-300/50 border-0 focus-visible:ring-0
+                                        className="bg-white border border-gray-400 focus-visible:ring-0
                                         text-black focus-visible:ring-offset-0"
                                         placeholder="Enter server name"
                                         {...field}
@@ -131,7 +131,7 @@ export const InitialModel = () => {
                             )}
                         />
                         </div>
-                        <DialogFooter className="bg-gray-100 px-6 py-4">
+                        <DialogFooter className="bg-[#E7DBCC] px-6 py-4">
                             <Button variant="primary" disabled={isLoading}>
                                 Create
                             </Button>
