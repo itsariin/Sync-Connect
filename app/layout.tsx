@@ -7,6 +7,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 //imported the dark theme thingy from shadcn and wrapping the children in it
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import { cn } from "@/lib/utils";
+import { ModelProvider } from "@/components/providers/model-provider";
 
 const font = Open_Sans({ subsets: ["latin"] });
 
@@ -35,6 +36,7 @@ export default function RootLayout({
         enableSystem={false}
         storageKey="syncconnect-theme"
         >
+        <ModelProvider/>
         {children}
         </ThemeProvider>
         </body>

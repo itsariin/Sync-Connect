@@ -3,8 +3,12 @@
 import {Plus} from "lucide-react"
 
 import { ActionTootip } from "@/components/action-tooltip";
+import { useModel } from "@/hooks/use-model-store"
 
 export const NavigationAction = () => {
+
+    const { onOpen } = useModel();
+
     return (
         //hover function of letting the member know about plus button is here
         <div>
@@ -13,7 +17,7 @@ export const NavigationAction = () => {
                 align="center"
                 label="Add a Nerd server"
             >
-                <button className="group rounded-full w-[48px] h-[48px] bg-[#E7DBCC] hover:bg-emerald-500
+                <button onClick={() => onOpen("createServer")} className="group rounded-full w-[48px] h-[48px] bg-[#E7DBCC] hover:bg-emerald-500
                 flex items-center">
                     <div className="flex mx-3 items-center justify-center">
                         <Plus 
